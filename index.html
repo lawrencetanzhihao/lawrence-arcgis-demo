@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArcGIS API for JavaScript Demo</title>
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.13/esri/css/main.css"
+    />
+    <style>
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+    <script>
+      let dojoConfig = {
+        async: true,
+        packages: [
+          {
+            name: "esri",
+            location: "https://js.arcgis.com/4.13/esri",
+          },
+        ],
+      };
+    </script>
+    <script src="https://js.arcgis.com/4.13/dojo/dojo.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
